@@ -18,13 +18,16 @@ export default function LyingPage() {
         </p>
 
         <div className="mt-6 space-y-4">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <Link
+            href="/categories/lying/ankle-rotations"
+            className="block rounded-2xl border border-slate-200 bg-slate-50 p-4 transition hover:bg-sky-50"
+          >
             <h3 className="font-semibold text-slate-900">Ankle rotations</h3>
             <p className="mt-2 text-sm text-slate-600">
               Slowly rotate each ankle in circles to improve mobility and blood
               flow.
             </p>
-          </div>
+          </Link>
 
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
             <h3 className="font-semibold text-slate-900">Knee bends</h3>

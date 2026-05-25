@@ -20,7 +20,21 @@ export default function Home() {
         <div className="mt-6 flex h-40 items-center justify-center rounded-2xl bg-sky-50 border border-sky-100">
           <span className="text-sm text-sky-700">Image / Illustration</span>
         </div>
+<div className="mt-8 space-y-3">
+  <Link
+    href="/login"
+    className="block w-full rounded-2xl bg-sky-500 px-4 py-3 text-center font-medium text-white transition hover:bg-sky-600"
+  >
+    Login
+  </Link>
 
+  <Link
+    href="/register"
+    className="block w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-center font-medium text-slate-700 transition hover:bg-slate-50"
+  >
+    Create Account
+  </Link>
+</div>
         <Link
   href="/categories"
   className="mt-6 block w-full rounded-2xl bg-sky-600 px-4 py-3 text-center font-medium text-white transition hover:bg-sky-700"

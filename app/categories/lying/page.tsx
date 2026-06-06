@@ -52,6 +52,12 @@ export default function LyingPage() {
         >
           Back to Categories
         </Link>
+        <Link
+  href="/feedback"
+  className="mt-8 block rounded-2xl bg-sky-500 px-4 py-3 text-center font-medium text-white hover:bg-sky-600"
+>
+  Give Feedback
+</Link>
       </div>
     </main>
   );

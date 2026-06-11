@@ -29,7 +29,20 @@ export default function CategoriesPage() {
 
         {/* Profile Card */}
         <section className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <h2 className="text-3xl font-bold text-slate-900">My Profile</h2>
+          <div className="flex items-center gap-4">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-sky-100 text-3xl">
+              👤
+            </div>
+
+            <div>
+              <h2 className="text-3xl font-bold text-slate-900">
+                My Profile
+              </h2>
+              <p className="mt-1 text-sm text-slate-500">
+                Personalised account area
+              </p>
+            </div>
+          </div>
 
           {user ? (
             <>
@@ -55,6 +68,13 @@ export default function CategoriesPage() {
               </div>
 
               <div className="mt-4 rounded-2xl bg-slate-50 p-5">
+                <p className="text-sm text-slate-500">Last login</p>
+                <p className="mt-1 font-semibold text-slate-900">
+                  Recently active
+                </p>
+              </div>
+
+              <div className="mt-4 rounded-2xl bg-slate-50 p-5">
                 <p className="text-sm text-slate-500">
                   Preferred exercise level
                 </p>
@@ -63,13 +83,24 @@ export default function CategoriesPage() {
                 </p>
               </div>
 
-              <div className="mt-4 rounded-2xl bg-slate-50 p-5">
-                <p className="text-sm text-slate-500">
-                  Exercises completed
-                </p>
-                <p className="mt-1 font-semibold text-slate-900">
-                  0
-                </p>
+              <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-2xl bg-slate-50 p-5">
+                  <p className="text-sm text-slate-500">
+                    Exercises completed
+                  </p>
+                  <p className="mt-1 text-2xl font-bold text-slate-900">
+                    0
+                  </p>
+                </div>
+
+                <div className="rounded-2xl bg-slate-50 p-5">
+                  <p className="text-sm text-slate-500">
+                    Feedback submitted
+                  </p>
+                  <p className="mt-1 text-2xl font-bold text-slate-900">
+                    0
+                  </p>
+                </div>
               </div>
 
               <button
@@ -81,7 +112,7 @@ export default function CategoriesPage() {
             </>
           ) : (
             <>
-              <p className="mt-4 text-sm leading-6 text-slate-600">
+              <p className="mt-6 text-sm leading-6 text-slate-600">
                 You are currently using the app as a guest.
               </p>
 

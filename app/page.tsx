@@ -59,9 +59,13 @@ export default function HomePage() {
             exercise position that feels safest and most comfortable for you.
           </p>
 
-          <div className="mt-8 flex h-64 items-center justify-center rounded-2xl border border-sky-100 bg-sky-50 text-sky-600">
-            Image / Illustration
-          </div>
+    <div className="mt-8 flex h-64 items-center justify-center rounded-2xl border border-sky-100 bg-sky-50">
+  <img
+    src="/logo.jpg"
+    alt="MS Active Logo"
+    className="max-h-48 object-contain"
+  />
+</div>
         </section>
 
         {/* Safety Notes */}
